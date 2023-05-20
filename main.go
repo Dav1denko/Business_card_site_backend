@@ -9,7 +9,7 @@ type User struct {
 }
 
 func home_page(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "test GOGOGOGo")
+	fmt.Fprintf(w, "test GOGOGOGohhh")
 }
 
 func contatts_page(w http.ResponseWriter, r *http.Request) {
