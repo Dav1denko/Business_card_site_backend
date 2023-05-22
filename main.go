@@ -2,14 +2,15 @@ package main
 
 import (
 	"fmt"
+	"html/template"
 	"net/http"
 )
 
-type User struct {
-}
-
 func home_page(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "test GOGOGOGohhh")
+	tmpl, _ := template.ParseFiles("template/home_page.html")
+	myName := "Lolsx"
+	tmpl.Execute(w, myName)
+
 }
 
 func contatts_page(w http.ResponseWriter, r *http.Request) {
@@ -23,5 +24,6 @@ func handleRequest() {
 }
 
 func main() {
+
 	handleRequest()
 }
