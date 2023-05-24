@@ -6,24 +6,31 @@ import (
 	"net/http"
 )
 
-func home_page(w http.ResponseWriter, r *http.Request) {
-	tmpl, _ := template.ParseFiles("template/home_page.html")
-	myName := "Lolsx"
-	tmpl.Execute(w, myName)
+func index(w http.ResponseWriter, r *http.Request) {
+	t, err := template.ParseFiles("template/index.html", "template/header.html", "template/footer.html")
+	if err != nil {
+		fmt.Fprintf(w, err.Error())
+	}
 
+	t.ExecuteTemplate(w, "index", nil)
 }
 
-func contatts_page(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "contatdds")
+func create(w http.ResponseWriter, r *http.Request) {
+	t, err := template.ParseFiles("template/create.html", "template/header.html", "template/footer.html")
+	if err != nil {
+		fmt.Fprintf(w, err.Error())
+	}
+
+	t.ExecuteTemplate(w, "create", nil)
 }
 
-func handleRequest() {
-	http.HandleFunc("/", home_page)
-	http.HandleFunc("/contacts/", contatts_page)
+func handleFunc() {
+	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("./static/"))))
+	http.HandleFunc("/", index)
+	http.HandleFunc("/create/", create)
 	http.ListenAndServe(":8080", nil)
 }
 
 func main() {
-
-	handleRequest()
+	handleFunc()
 }
