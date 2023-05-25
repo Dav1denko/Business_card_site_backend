@@ -1,21 +1,144 @@
 {{define "index"}}
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet"  href="/static/css/main.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dav1denkO</title>
+<link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="/static/css/bootstrap.css">
+<link rel="stylesheet" href="/static/css/main.css">
+<script src="https://kit.fontawesome.com/a29e9c97c7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Test page main</h1>
-    <a href="/create/">название</a>
+    <header>
+<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="/">Dav1denk<i class="fa fa-circle-o"></i></a>
+    </div>
+    <div class="navbar-collapse collapse">
+<ul class="nav navbar-nav navbar-right">
+    <li><a href="#about_me" data-target="listLink"><i class="fa fa-address-card"></i>Обо мне</a></li>
+    <li><a href="#lastProject" data-target="listLink"><i class="fa fa-project-diagram"></i>Работы</a></li>
+    <li><a href="#contacts" data-target="listLink"><i class="fa fa-envelope-o" aria-hidden="false"></i>Контакты</a></li>   
+</ul>
 
-    {{template "header"}}
-    {{template "footer"}}
-    
+    </div>
+</div>
+</div>
+</header>
+<div id="headerwrap">
+    <div class="container">
+        <div class="row centered">
+<div class="col-lg-9 col-lg-offset-2">
+   <h1>Разработка</h1> 
+   <br>
+   <ul>
+    <li>Frontend</li>
+    <li>Backend</li>
+    <li>Android</li>
+   </ul>
+</div>
+        </div>
+    </div>
+</div>
+<div class="container w">
+  <div class="row centered">
+<br><br>
+<div class="col-lg-4">
+    <i class="fa fa-laptop"></i>
+    <h4>Frontend</h4>
+    <p class="text-justify">Все, что браузер может выводить на экран. 
+        По сути, когда вы переходите на любой сайт, то видите там кнопки, текст, 
+        различную анимацию и другие составляющие – все это реализовано при помощи фронтенда.</p>
+</div>
+<div class="col-lg-4">
+    <i class="fa fa-server"></i>
+    <h4>Backend</h4>
+    <p class="text-justify">Все, что работает на сервере, то есть «не в браузере» или «на компьютере, 
+        подсоединенном к сети (обычно к Интернету), который отвечает на сообщения от других компьютеров».</p>
+</div>
+<div class="col-lg-4">
+    <i class="fa fa-mobile"></i>
+    <h4>Android</h4>
+    <p class="text-justify">Мобильные приложения для смартфонов, планшетов, электронных книг, игровых приставок и других девайсов, работающих на операционной системе Android.</p>
+</div>
+  </div>  
+  <br><br>
+</div>
+<div id="dg">
+    <div class="container">
+        <div class="row centered">
+            <h4 id="lastProject">Последние работы</h4>
+            <br>
+            <div class="col-lg-4">
+                <div class="tilt">
+                    <img src="/img/logo_app_x250.jpg" alt="text">
+                    <h5>Current weather app</h5>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="tilt">
+                    <img src="/img/boxesProduct_x250.jpg" alt="text">
+                    <h5>Layout ShopBox</h5>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="tilt">
+                    <img src="/img/spring-boot_x250.jpg" alt="text">
+                    <h5>Processing documents</h5>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a class="btn btn-default btn-lg" href="/allProject" role="button">Посмотреть все работы</a>
+        </div>
+    </div>
+</div>
+<div class="container wb">
+    <div class="row centered">
+        <br><br>
+        <div class="col-lg-8 col-lg-offset-2">
+            <h4 id="about_me">Что я могу сделать?</h4>
+            <p class="text-justify">Меня зовут Дмитрий. Я изучаю создание сайтов и мобильных приложений. 
+                Моя цель – создавать лучшее сервисы и решения для бизнеса. 
+                 Я прошел необходимые курсы и сейчас занимаюсь созданием и развитием своих проектов.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="r">
+    <div class="container">
+        <div class="row centered">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h4 id="contacts">Контакты</h4>
+            <ul class="text-left">
+                <li><i class="fa fa-envelope-o"></i>Email: david3nko_dmitriy@mail.ru</li>
+                <li><i class="fa fa-stack-overflow"></i>StackOverFlow: <a href="https://ru.stackoverflow.com/users/507172/liki">507172</a> </li>
+                <li><i class="fa fa-github"></i>Github: <a href="https://github.com/Dav1denko">Dav1denko</a></li>
+              </ul>
+          </div>  
+        </div>
+    </div>
+</div>
+<footer>
+<div id="f">
+    <div class="container">
+        <div class="row centered">
+            <a href="https://github.com/Dav1denko"><i class="fa fa-github"></i></a>
+        </div>
+    </div>
+</div>
+</footer>
+<script src="/static/js/jquery.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="/static/js/app.js"></script>
 </body>
 </html>
 

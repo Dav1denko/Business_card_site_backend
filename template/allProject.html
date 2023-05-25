@@ -1,0 +1,468 @@
+{{define "AllProject"}}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dav1denkO</title>
+<link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="/static/css/bootstrap.css">
+<link rel="stylesheet" href="/static/css/main.css">
+<script src="https://kit.fontawesome.com/a29e9c97c7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="/">Dav1denk<i class="fa fa-circle-o"></i></a>
+    </div>
+    <div class="navbar-collapse collapse">
+<ul class="nav navbar-nav navbar-right">
+    <li><a href="/"><i class="fa fa-window-maximize" aria-hidden="true"></i>На главную</a></li>   
+</ul>
+
+    </div>
+</div>
+</div>
+</header>
+<div id="dg_allProject">
+    <div class="container-fluid centered" id="ListProjects">
+        <h4 id="lastProject">Мои работы</h4>
+        <br>
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                <div class="panel panel-default ShowBtnMoreInfo">
+                <div class="panel-body">
+                <div class="tilt_allProject">
+                    <div class="thumbnail">
+                    <img src="/img/logo_app_x250.jpg" class="img-responsive" alt="text">
+                    <div class="desc">
+                        <div class="cell">
+                          <p><a class="btn btn-default btn-lg show-info-popapp" data-id="Weather">Подробнее</a></p>
+                        </div>
+                      </div>
+                </div>
+                    <h5>Current weather app</h5>
+                </div>
+            </div>
+            </div>
+        </div>
+  
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+            <div class="panel panel-default ShowBtnMoreInfo">
+            <div class="panel-body">
+            <div class="tilt_allProject">
+                <div class="thumbnail">
+                <img src="/img/boxesProduct_x250.jpg" class="img-responsive" alt="text">
+                <div class="desc">
+                    <div class="cell">
+                      <p><a class="btn btn-default btn-lg show-info-popapp" data-id="Box">Подробнее</a></p>
+                    </div>
+                  </div>
+            </div>
+                <h5>Layout ShopBox</h5>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+        <div class="panel panel-default ShowBtnMoreInfo">
+        <div class="panel-body">
+        <div class="tilt_allProject">
+            <div class="thumbnail">
+            <img src="/img/spring-boot_x250.jpg" class="img-responsive" alt="text">
+            <div class="desc">
+                <div class="cell">
+                  <p><a class="btn btn-default btn-lg show-info-popapp" data-id="Docum">Подробнее</a></p>
+                </div>
+              </div>
+        </div>
+            <h5>Processing documents</h5>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+    <div class="panel panel-default ShowBtnMoreInfo">
+    <div class="panel-body">
+    <div class="tilt_allProject">
+        <div class="thumbnail">
+        <img src="/img/bank_operation_x250.jpg" class="img-responsive" alt="text">
+        <div class="desc">
+            <div class="cell">
+              <p><a class="btn btn-default btn-lg show-info-popapp" data-id="Bank">Подробнее</a></p>
+            </div>
+          </div>
+    </div>
+        <h5>Bank operations</h5>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+    <div class="panel panel-default ShowBtnMoreInfo">
+    <div class="panel-body">
+    <div class="tilt_allProject">
+        <div class="thumbnail">
+        <img src="/img/srping_cloud_x250.png" class="img-responsive" alt="text">
+        <div class="desc">
+            <div class="cell">
+              <p><a class="btn btn-default btn-lg show-info-popapp" data-id="Cloud">Подробнее</a></p>
+            </div>
+          </div>
+    </div>
+        <h5>Spring cloud</h5>
+    </div>
+</div>
+</div>
+</div>
+
+
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+    <div class="panel panel-default ShowBtnMoreInfo">
+    <div class="panel-body">
+    <div class="tilt_allProject">
+        <div class="thumbnail">
+        <img src="/img/guest_number_x250.png" class="img-responsive" alt="text">
+        <div class="desc">
+            <div class="cell">
+              <p><a class="btn btn-default btn-lg show-info-popapp" data-id="GTN">Подробнее</a></p>
+            </div>
+          </div>
+    </div>
+        <h5>Guess the number</h5>
+    </div>
+</div>
+</div>
+</div>
+
+
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+    <div class="panel panel-default ShowBtnMoreInfo">
+    <div class="panel-body">
+    <div class="tilt_allProject">
+        <div class="thumbnail">
+        <img src="/img/guest_book_x250.png" class="img-responsive" alt="text">
+        <div class="desc">
+            <div class="cell">
+              <p><a class="btn btn-default btn-lg show-info-popapp" data-id="GBook">Подробнее</a></p>
+            </div>
+          </div>
+    </div>
+        <h5>Guest Book</h5>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+    <div class="panel panel-default ShowBtnMoreInfo">
+    <div class="panel-body">
+    <div class="tilt_allProject">
+        <div class="thumbnail">
+        <img src="/img/busness_card_x250.png" class="img-responsive" alt="text">
+        <div class="desc">
+            <div class="cell">
+              <p><a class="btn btn-default btn-lg show-info-popapp" data-id="Card">Подробнее</a></p>
+            </div>
+          </div>
+    </div>
+        <h5>Business card</h5>
+    </div>
+</div>
+</div>
+</div>          
+        </div>
+        
+    </div>
+
+    <!-- /PopAppProject -->
+ <div id="addPopupWeather" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+          <h5 class="modal-title">Дополнительная информация</h5>
+        </div>
+        <h5 class="namePopApp">Current weather app</h5>
+        <div class="modal-body row">  
+          <div class="col-xs-12 col-sm-6">
+            <div class="thumbnail">
+              <img src="/img/logo_app_x250.jpg" class="img-responsive" alt="Product image">
+            </div>
+          </div>
+           <div class="col-xs-12 col-sm-6">
+                       <div class="list-group">
+                        <span class="list-group-item"><span>Language: Java</span></span> 
+                        <span class="list-group-item"><span>Architecture: MVP</span></span>
+                        <span class="list-group-item text-justify"> <span>Current weather is an application that shows the weather data for any location including over 200,000 cities. 
+                            You can choose the city and find out the current weather. Current weather app uses API OpenWeather.</span></span> 
+                        <span class="list-group-item"><span><a href="https://github.com/Dav1denko/Current_weather_app" target="_blank"><i class="fa fa-github"></i> Github</a></span></span>
+                      </div>
+           </div>
+        </div>
+        <div class="modal-footer"> 
+                  <button type="button" class="btn btn-default center-block" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="addPopupBox" class="modal fade popupStyle" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+          <h5 class="modal-title">Дополнительная информация</h5>
+        </div>
+        <h5 class="namePopApp">Layout ShopBox</h5>
+        <div class="modal-body row">  
+          <div class="col-xs-12 col-sm-6">
+            <div class="thumbnail">
+              <img src="/img/boxesProduct_x250.jpg" class="img-responsive" alt="Product image">
+            </div>
+          </div>
+           <div class="col-xs-12 col-sm-6">
+                       <div class="list-group">
+                        <span class="list-group-item"><span>Language: HTML,CSS,JS</span></span> 
+                        <span class="list-group-item"><span>Architecture: layout</span></span>
+                        <span class="list-group-item text-justify"> <span>Пример интернет магазина. Макет можно использовать для любого вида товара.</span></span> 
+                        <span class="list-group-item"><span><a href="https://github.com/Dav1denko/Layout_ShopBox" target="_blank"><i class="fa fa-github"></i> Github</a></span></span>
+                      </div>
+           </div>
+        </div>
+        <div class="modal-footer"> 
+                  <button type="button" class="btn btn-default center-block" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="addPopupDocum" class="modal fade popupStyle" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+          <h5 class="modal-title">Дополнительная информация</h5>
+        </div>
+        <h5 class="namePopApp">Processing documents</h5>
+        <div class="modal-body row">  
+          <div class="col-xs-12 col-sm-6">
+            <div class="thumbnail">
+              <img src="/img/spring-boot_x250.jpg" class="img-responsive" alt="Product image">
+            </div>
+          </div>
+           <div class="col-xs-12 col-sm-6">
+                       <div class="list-group">
+                        <span class="list-group-item"><span>Language: Java</span></span> 
+                        <span class="list-group-item"><span>Architecture: Monolithic</span></span>
+                        <span class="list-group-item text-justify"> <span>This application uses Spring Boot and processes a 
+                            request in JSON format from API and saves three files in xml, 
+                            json, csv format to the Local disk D. </span></span> 
+                        <span class="list-group-item"><span><a href="https://github.com/Dav1denko/Test_task_of_processing_documents" target="_blank"><i class="fa fa-github"></i> Github</a></span></span>
+                      </div>
+           </div>
+        </div>
+        <div class="modal-footer"> 
+                  <button type="button" class="btn btn-default center-block" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="addPopupBank" class="modal fade popupStyle" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+          <h5 class="modal-title">Дополнительная информация</h5>
+        </div>
+        <h5 class="namePopApp">Bank operations</h5>
+        <div class="modal-body row">  
+          <div class="col-xs-12 col-sm-6">
+            <div class="thumbnail">
+              <img src="/img/bank_operation_x250.jpg" class="img-responsive" alt="Product image">
+            </div>
+          </div>
+           <div class="col-xs-12 col-sm-6">
+                       <div class="list-group">
+                        <span class="list-group-item"><span>Language: Java</span></span> 
+                        <span class="list-group-item"><span>Architecture: Monolithic</span></span>
+                        <span class="list-group-item text-justify"> <span>Spring server application with HTTP request handling.</span></span> 
+                        <span class="list-group-item"><span><a href="https://github.com/Dav1denko/Bank_operations_Spring" target="_blank"><i class="fa fa-github"></i> Github</a></span></span>
+                      </div>
+           </div>
+        </div>
+        <div class="modal-footer"> 
+                  <button type="button" class="btn btn-default center-block" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="addPopupCloud" class="modal fade popupStyle" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+          <h5 class="modal-title">Дополнительная информация</h5>
+        </div>
+        <h5 class="namePopApp">Spring cloud</h5>
+        <div class="modal-body row">  
+          <div class="col-xs-12 col-sm-6">
+            <div class="thumbnail">
+              <img src="/img/srping_cloud_x250.png" class="img-responsive" alt="Product image">
+            </div>
+          </div>
+           <div class="col-xs-12 col-sm-6">
+                       <div class="list-group">
+                        <span class="list-group-item"><span>Language: Java</span></span> 
+                        <span class="list-group-item"><span>Architecture: Microservices</span></span>
+                        <span class="list-group-item text-justify"> <span>Spring server application with spring cloud microservices</span></span> 
+                        <span class="list-group-item"><span><a href="https://github.com/Dav1denko/Spring_cloud_microservices" target="_blank"><i class="fa fa-github"></i> Github</a></span></span>
+                      </div>
+           </div>
+        </div>
+        <div class="modal-footer"> 
+                  <button type="button" class="btn btn-default center-block" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+  <div id="addPopupGTN" class="modal fade popupStyle" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+          <h5 class="modal-title">Дополнительная информация</h5>
+        </div>
+        <h5 class="namePopApp">Guess the number</h5>
+        <div class="modal-body row">  
+          <div class="col-xs-12 col-sm-6">
+            <div class="thumbnail">
+              <img src="/img/guest_number_x250.png" class="img-responsive" alt="Product image">
+            </div>
+          </div>
+           <div class="col-xs-12 col-sm-6">
+                       <div class="list-group">
+                        <span class="list-group-item"><span>Language: Go</span></span> 
+                        <span class="list-group-item"><span>Architecture: Monolithic</span></span>
+                        <span class="list-group-item text-justify"> <span>Простая и увлекательная игра угадай число.</span></span> 
+                        <span class="list-group-item"><span><a href="https://github.com/Dav1denko/Guess_the_number" target="_blank"><i class="fa fa-github"></i> Github</a></span></span>
+                      </div>
+           </div>
+        </div>
+        <div class="modal-footer"> 
+                  <button type="button" class="btn btn-default center-block" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="addPopupGBook" class="modal fade popupStyle" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+          <h5 class="modal-title">Дополнительная информация</h5>
+        </div>
+        <h5 class="namePopApp">Guest Book</h5>
+        <div class="modal-body row">  
+          <div class="col-xs-12 col-sm-6">
+            <div class="thumbnail">
+              <img src="/img/guest_book_x250.png" class="img-responsive" alt="Product image">
+            </div>
+          </div>
+           <div class="col-xs-12 col-sm-6">
+                       <div class="list-group">
+                        <span class="list-group-item"><span>Language: Go</span></span> 
+                        <span class="list-group-item"><span>Architecture: Monolithic</span></span>
+                        <span class="list-group-item text-justify"> <span>Реализация простой гостевой книги.</span></span> 
+                        <span class="list-group-item"><span><a href="https://github.com/Dav1denko/GuestBook" target="_blank"><i class="fa fa-github"></i> Github</a></span></span>
+                      </div>
+           </div>
+        </div>
+        <div class="modal-footer"> 
+                  <button type="button" class="btn btn-default center-block" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="addPopupCard" class="modal fade popupStyle" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+          <h5 class="modal-title">Дополнительная информация</h5>
+        </div>
+        <h5 class="namePopApp">Business card</h5>
+        <div class="modal-body row">  
+          <div class="col-xs-12 col-sm-6">
+            <div class="thumbnail">
+              <img src="/img/busness_card_x250.png" class="img-responsive" alt="Product image">
+            </div>
+          </div>
+           <div class="col-xs-12 col-sm-6">
+                       <div class="list-group">
+                        <span class="list-group-item"><span>Language: HTML, CSS, JS</span></span> 
+                        <span class="list-group-item"><span>Architecture: Layout</span></span>
+                        <span class="list-group-item text-justify"> <span>Макет сайта-визитки который использует bootstrap и JS</span></span> 
+                        <span class="list-group-item"><span><a href="https://github.com/Dav1denko/Business_card_site_layout" target="_blank"><i class="fa fa-github"></i> Github</a></span></span>
+                      </div>
+           </div>
+        </div>
+        <div class="modal-footer"> 
+                  <button type="button" class="btn btn-default center-block" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<footer>
+<div id="f">
+    <div class="container">
+        <div class="row centered">
+            <a href="https://github.com/Dav1denko"><i class="fa fa-github"></i></a>
+        </div>
+    </div>
+</div>
+</footer>
+<script src="/static/js/jquery.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="/static/js/app.js"></script>
+</body>
+</html>
+{{end}}

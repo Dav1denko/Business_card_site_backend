@@ -7,27 +7,30 @@ import (
 )
 
 func index(w http.ResponseWriter, r *http.Request) {
-	t, err := template.ParseFiles("template/index.html", "template/header.html", "template/footer.html")
+	t, err := template.ParseFiles("template/index.html")
 	if err != nil {
 		fmt.Fprintf(w, err.Error())
 	}
-
 	t.ExecuteTemplate(w, "index", nil)
 }
 
-func create(w http.ResponseWriter, r *http.Request) {
-	t, err := template.ParseFiles("template/create.html", "template/header.html", "template/footer.html")
+func allProject(w http.ResponseWriter, r *http.Request) {
+	t, err := template.ParseFiles("template/allProject.html")
 	if err != nil {
 		fmt.Fprintf(w, err.Error())
 	}
+	t.ExecuteTemplate(w, "AllProject", nil)
+}
 
-	t.ExecuteTemplate(w, "create", nil)
+func loadStaticData() {
+	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("./static/"))))
+	http.Handle("/img/", http.StripPrefix("/img/", http.FileServer(http.Dir("./img/"))))
 }
 
 func handleFunc() {
-	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("./static/"))))
+	loadStaticData()
 	http.HandleFunc("/", index)
-	http.HandleFunc("/create/", create)
+	http.HandleFunc("/allProject/", allProject)
 	http.ListenAndServe(":8080", nil)
 }
 
