@@ -93,21 +93,14 @@ hr {
   background-size: cover;  
 }
 
-@media only screen and (max-width: 600px) {
-  #headerwrap {
-    background: url(/img/mainMob.jpg) no-repeat center top;
-
-  }
- }
-
-
 
 #headerwrap h1 {
   margin-top: 60px;
-  color: #00FFFF;
-  font-size: calc(3em + 1vw);
+  color: wheat;
+  font-size: calc(4em + 1vw);
   font-weight: 700;
   letter-spacing: 3px;
+  -webkit-text-stroke: 1px black;
    
 }
 
@@ -130,16 +123,15 @@ hr {
   background-clip:content-box;
 }
 
-#headerwrap ul {
-  color: #00FFFF;
-  font-size: calc(2em + 1vw);
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  list-style-type: none;
-}
 
 .w {
   padding-top: 5px;
+}
+
+.w h2 {
+  font-size: 40px;
+  margin-top: 5px;
+  padding-bottom: 10px;
 }
 
 .w h4 {
