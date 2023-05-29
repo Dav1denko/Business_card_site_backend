@@ -31,7 +31,7 @@ func handleFunc() {
 	loadStaticData()
 	http.HandleFunc("/", index)
 	http.HandleFunc("/allProject/", allProject)
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe(":8090", nil)
 }
 
 func main() {
